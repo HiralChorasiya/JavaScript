@@ -312,7 +312,7 @@ console.log(10 > 5 ? "Greater" : "Less");
 console.log(null !== undefined ? "Different" : "Same");
 
 // What is the value of true ? 1 : 0?
-// console.log(true ? 1 : 0?);
+console.log(true ? 1 : 0);
 
 // Write an expression for getting a large number of three variables using a ternary operator?
 var n1 = 5, n2 = 10, n3 = 15, max;
