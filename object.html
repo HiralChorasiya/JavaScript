@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let developer1={
+    name:'Hiral',
+    skills:{primary:'full stack',secondary:'web designing'}
+}
+// let developer2=developer1;
+// let developer2 =Object.assign({},developer1)
+// let developer2 = {...developer1}
+let developer2 = JSON.parse(JSON.stringify(developer1));
+developer2.name="Yashvi";
+developer2.skills.primary="Front-End"
+console.log(developer1);
+console.log(developer2);
+
+    </script>
+</body>
+</html>
