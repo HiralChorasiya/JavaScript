@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Q-1  
+
+    function sayHello()
+    {
+        console.log("hello")
+    }
+    sayHello()
+
+    //Q-2
+    //function with argument with return
+    function calculateSum(num,num1){
+        return num+num1;
+    }
+    Sum=calculateSum(5,10);
+    console.log(Sum);
+
+    //function with argument without return
+    function calculateSum(num1, num2) {
+        let sum = num1 + num2;
+        console.log(sum);
+    }
+    calculateSum(6,7);
+
+    //function without argument with return
+    function calculateSum() {
+        let num3=2;
+        let num4=5;
+  return num3 + num4;
+}
+calculateSum();
+
+  //function without argument without return
+  function calculateSum() {
+        let num5=5;
+        let num6=5;
+  sum= num5 + num6;
+  console.log(sum);
+}
+ // Q-3
+
+ function printArray(arr) {
+  console.log(arr);
+}
+printArray(["Hiral","2"]);
+
+//Q-4
+var multiply = function(a, b) {
+  return a * b;
+}
+var result = multiply(5, 7);
+console.log(result);
+
+//Q-5
+function myFunction(){
+    //SOME STATEMENTS
+}
+//CALLING MY FUNCTION
+myFunction()
+
+//Q-6
+const squareNumber = (n) => {
+  return n * n;
+};
+const square = squareNumber(5);
+console.log(square);
+
+//Q-7
+function getFullName(firstName, lastName) {
+  var fullName = firstName + ' ' + lastName;
+  return fullName;
+}
+var firstName = 'Hiral';
+var lastName = 'Chorasiya';
+
+var name = getFullName(firstName, lastName);
+console.log( typeof name);
+console.log(name);
+
+//Q-8
+function calculateArea(length, width) {
+  var area = length * width;
+  return area;
+}
+var length = 5;
+var width = 3;
+var Rectarea= calculateArea(length, width);
+console.log( Rectarea);
+
+//Q-9
+function isEven(num) {
+  if (num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+var number = 6;
+var result = isEven(number);
+console.log(result);
+
+//Q-10
+//USING ternary operator
+function findMaximum(a, b, c) {
+  var max = (a > b) ? (a > c ? a : c) : (b > c ? b : c);
+  return max;
+}
+MAX=findMaximum(5, 25, 10);
+console.log(MAX);
+
+//Q-11
+//arrow function
+const calculatePrice = (price, discount = 0.1) => {
+  const discountedPrice = price - (price * discount);
+  return discountedPrice;
+};
+const originalPrice = 100;
+const discountPercentage = 0.2;
+const price = calculatePrice(originalPrice, discountPercentage);
+console.log(price);
+
+//normal function
+function calculatePrice1(price, discount = 0.1) {
+  var discountedPrice1 = price - (price * discount);
+  return discountedPrice1;
+}
+var originalPrice1 = 200;
+var discountPercentage1 = 0.2;
+var price1 = calculatePrice1(originalPrice1, discountPercentage1);
+console.log(price1);
+
+//Q-12
+function isEven(num) {
+  if (num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+var number = 5;
+var result = isEven(number);
+console.log(result);
+
+//Q-14
+function greet(name) {
+  if (name === undefined) {
+    name = 'Anonymous';
+  }
+  console.log('Hello, ' + name + '!');
+}
+// greet()//will print anonymous
+greet('Hiral')// will print Hello Hiral
+
+//Q-15
+function exponent(base, power = 2) {
+  return Math.pow(base, power);
+}
+console.log(exponent(3, 4)); // Returns 81 
+console.log(exponent(5));    // Returns 25 
+    </script>
+</body>
+</html>
