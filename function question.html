@@ -149,6 +149,59 @@ var number = 5;
 var result = isEven(number);
 console.log(result);
 
+//Q-13
+// with argument and with return
+function calculateMultiple (a, b) {
+    return a * b;
+}
+console.log(calculateMultiple(3,4));
+
+// with argument and without return
+function calculateMultiple1 (a, b) {
+    console.log(a * b);
+}
+calculateMultiple1(4,6);
+
+// without argument and without return
+function calculateMultiple2 () {
+    let a = 3, b =2;
+    console.log(a * b);
+}
+calculateMultiple2();
+
+// without argument and with return
+function calculateMultiple3 () {
+    let a = 3, b =6;
+    return a * b;
+}
+console.log(calculateMultiple3());
+
+//with arrow function
+//  with argument and with return
+const calculateMultiply2 = (p, q) => {
+    return p * q;
+}
+console.log(calculateMultiply2(5,4));
+
+// with argument and without return
+const calculateMultiply3 = (p, q) => {
+    console.log(p * q);
+}
+calculateMultiply3(4,5);
+
+//  without argument and without return
+const calculateMultiply4 = () => {
+    let p = 3, q =4;
+    console.log(p * q);
+}
+calculateMultiply4();
+
+// without argumentand with return
+const calculateMultiply5 = () => {
+    let p = 3, q =4;
+    return p * q;
+}
+console.log(calculateMultiply5());
 //Q-14
 function greet(name) {
   if (name === undefined) {
