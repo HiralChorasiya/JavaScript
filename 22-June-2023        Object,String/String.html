@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //string declaration
+        let name="Hiral";
+        let name2='Yashvi';
+
+        //get length of string
+        console.log(name.length);//output:5
+        console.log(name2.length);//output:6
+
+        //accessing character of string
+        console.log(name[3]);//output:a
+
+        //concating strings
+        console.log(name+" "+name2);//output: Hiral Yashvi
+        console.log(name.concat(" is a friend of ",name2));//output:Hiral is a friend of Yashvi
+
+        //converting values into string
+        let value=33;
+        // // let stringvalue=value.toString();//using toString()
+        // // let stringvalue=string(value);//using string()
+        let stringvalue=value+'';//using '+' operator
+        // let stringvalue=${value};//using template literals
+        console.log( typeof stringvalue);
+
+//comparing string
+if("Hiral"==name2){
+    console.log("equal")//output:not equal
+}
+else{
+    console.log("not equal")
+}
+
+//string methods
+//concat
+console.log(name.concat(" is a friend of ",name2));//output:Hiral is a friend of Yashvi
+
+//includes
+let str="This is Javascript topic."//will return true or false
+let str2=str.includes('Javascript');
+console.log(str2);//output:true
+
+//indexOf & LastIndexOf
+let position=str.indexOf('Javascript');
+console.log(position);//output:8
+let position2=str.lastIndexOf('is');
+console.log(position2);//output:5
+
+
+//replace
+let greet="good morning";
+let newGreet=greet.replace("morning","evening");
+console.log(newGreet);//output:good evening
+
+//slice
+let slice=name.slice(2,4);
+console.log(slice);//output:ra
+
+//substring
+let substring=str.substring(8,18);
+console.log(substring)//output:Javascript
+
+//uppercase and lowercase
+let uppercase=name2.toUpperCase();
+console.log(uppercase);//output:YASHVI
+let lowercase=name.toLowerCase();
+console.log(lowercase)//OUTPUT:hiral
+
+//Trim ,Trimstart,TrimEnd
+let words="     Hello        "
+console.log(words.trim());//Output:Hello
+console.log(words.trimStart());//Output:Hello
+console.log(words.trimEnd());//Output:     Hello
+
+//split
+const str3 = "Hello, World!";
+console.log(str3.split(", "));  // Output: ["Hello", "World!"]
+
+//charAt
+console.log(name.charAt(0));  // Output: H
+
+//match
+const str4 = "Hello, World!";
+const matches = str.match(/o/g);
+console.log(matches); // Output: ["o", "o"]
+
+//matchAll
+const str5 = "Hello, World!";
+
+for (const match of matches) {
+  console.log(match[0]); // Output: "o"
+}
+
+//Replace All
+console.log(str3.replaceAll("o", "e")); // Output: "Helle, Werld!"
+
+//PadEND
+const str6 = "Hello";
+console.log(str6.padEnd(8, "!")); // Output: "Hello!!!"
+
+//padStart
+console.log(str6.padStart(8, "!")); // Output: "!!!Hello"
+
+//charCodeAt(index)
+console.log(str6.charCodeAt(0)); // Output: 72
+
+//search(regexp)
+console.log(str3.search(/o/)); // Output: 4
+
+//startsWith(searchString)
+console.log(str3.startsWith("Hello")); // Output: true
+</script>
+</body>
+</html>
